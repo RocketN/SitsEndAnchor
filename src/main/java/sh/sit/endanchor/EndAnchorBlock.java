@@ -74,13 +74,13 @@ public class EndAnchorBlock extends Block implements BlockEntityProvider {
         }
 
         // if not the end, explode
-        if (!world.getDimensionEntry().matchesKey(DimensionTypes.THE_END)) {
-            if (!world.isClient) {
-                explode(state, world, pos);
-            }
+        // if (!world.getDimensionEntry().matchesKey(DimensionTypes.THE_END)) {
+        //  if (!world.isClient) {
+        //      explode(state, world, pos);
+        //  }
 
-            return ItemActionResult.success(world.isClient);
-        }
+        //  return ItemActionResult.success(world.isClient);
+        //}
 
         // if charged and not holding end crystal
         if (state.get(CHARGED)) {
